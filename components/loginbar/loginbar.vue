@@ -1,9 +1,9 @@
 <template>
-	<view class="loginbar">
-		<view class="text clear">
+	<view class="loginbar clear">
+		<view class="text clear" @tap="stu">
 			学号/工号
 		</view>
-		<view class="text clear">
+		<view class="text clear" @tap="visit">
 			游客
 		</view>
 	</view>
@@ -16,6 +16,18 @@
 			return {
 				
 			};
+		},
+		methods:{
+			stu(){
+				uni.redirectTo({
+					url:'../../pages/login/Stulogin'
+				})
+			},
+			visit(){
+				uni.redirectTo({
+					url:'../../pages/login/Visitlogin'
+				})
+			}
 		}
 	}
 </script>
@@ -23,23 +35,21 @@
 <style>
 	.loginbar{
 		width: 100%;
-		position: fixed;
-		left: 0px;
 		height: 35px;
 		line-height: 35px;
+		border-bottom:  solid #d2cce6;
+		background-color: #f8f8f8;
+		grid-area: header;
 	}
 	.text{
 		float: left;
 		width: 50%;
 		color: #808080;
 		text-align: center;
+		padding-bottom: 2rem;
+		font-style:Fantasy;
+		font-size: large;
 	}
 	
-	/*此处设置清除浮动代码*/
-	 .clear::after,
-	 .clear::before {
-	        content: "";
-	        display: block;
-	         clear: both;
-	  }
+	
 </style>
