@@ -12,7 +12,23 @@
  * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
  */
 
+/**
+ * uView的全局SCSS主题文件
+ */
+@import 'uview-ui/theme.scss';
+
+/* 整体背景变量 */
+$uni-color-bgc: #FFFFFF;
 /* 颜色变量 */
+$uni-color-theme: #266af0;
+/* 按钮背景颜色*/
+$uni-bg-color-button-theme: linear-gradient(top left, #4B93FF, #3762EC);
+/* 蓝色#007AFF*/
+$uni-color-primary-blue: #007AFF;
+/* 蓝色#2E77ED*/
+$uni-color-primary-blue-2e: #2E77ED;
+/* 紫色#4f4bff*/
+$uni-color-violet: #4f4bff;
 
 /* 行为相关颜色 */
 $uni-color-primary: #007aff;
@@ -22,6 +38,8 @@ $uni-color-error: #dd524d;
 
 /* 文字基本颜色 */
 $uni-text-color:#333;//基本色
+$uni-base-color:#FFFFFF; // 白色
+$uni-text-color-b3: #b3b3b3;
 $uni-text-color-inverse:#fff;//反色
 $uni-text-color-grey:#999;//辅助灰色，如加载更多的提示信息
 $uni-text-color-placeholder: #808080;
@@ -29,19 +47,26 @@ $uni-text-color-disable:#c0c0c0;
 
 /* 背景颜色 */
 $uni-bg-color:#ffffff;
+/*#F7F7F7预加载图片*/
+$uni-bg-reload-img:#F7F7F7;
+/*#eeeeee预加载图片2等其他情况背景颜色*/
+$uni-background-e: #eeeeee;
 $uni-bg-color-grey:#f8f8f8;
 $uni-bg-color-hover:#f1f1f1;//点击状态颜色
 $uni-bg-color-mask:rgba(0, 0, 0, 0.4);//遮罩颜色
 
 /* 边框颜色 */
-$uni-border-color:#c8c7cc;
+$uni-border-color: #dcdcdc;
 
 /* 尺寸变量 */
 
 /* 文字尺寸 */
 $uni-font-size-sm:24rpx;
+$uni-font-size-mm:26rpx;
 $uni-font-size-base:28rpx;
+$uni-font-size-mg:30rpx;
 $uni-font-size-lg:32rpx;
+$uni-font-size-xg:36rpx;
 
 /* 图片尺寸 */
 $uni-img-size-sm:40rpx;
@@ -74,3 +99,204 @@ $uni-color-subtitle: #555555; // 二级标题颜色
 $uni-font-size-subtitle:36rpx;
 $uni-color-paragraph: #3F536E; // 文章段落颜色
 $uni-font-size-paragraph:30rpx;
+
+
+/* 全局内容的padding*/
+$padding-content-g: 24rpx;
+$padding-content-mg: 36rpx;
+$padding-content-xg: 52rpx;
+
+@mixin paddingContent {
+	padding: 0 $padding-content-g;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+/*文本类型方式的局中*/
+@mixin textCenter($width, $height) {
+    width: $width;
+    height: $height;
+    line-height: $height;
+    text-align: center;
+}
+/*文本类型方式的局中及样式*/
+@mixin textCenterStyle($width, $height, $color, $fSize, $bg) {
+    @include textCenter($width, $height);
+    color: $color;
+    font-size: $fSize;
+    background-color: $bg;
+}
+
+@mixin containerContent {
+    margin: 0 auto;
+    width: $content-width;
+}
+
+/* 绝对定位方式居中*/
+@mixin absoluteCenter{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+/* 绝对定位方式全屏*/
+@mixin absoluteFullPage{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+}
+/* 绝对定位方式全屏2*/
+@mixin absoluteFullPage2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+/* 固定定位方式全屏*/
+@mixin fixedFullPage{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+}
+/* 固定定位方式全屏2*/
+@mixin fixedFullPage2{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/* flex通用布局 */
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin columnCenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin columnBetween {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@mixin row {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+  
+@mixin right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+@mixin between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@mixin wrapBetweenLeftStart {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+@mixin wrapBetweenStart {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+@mixin wrapBetween {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+@mixin columnLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* 单行不换行, 超出显示...*/
+@mixin ellipsis {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* 多行不换号, 超出显示..., 接收一个行数的参数 */
+@mixin ellipsis2($line) {
+    display: -webkit-box;
+    // 指定方向： 垂直排列
+    -webkit-box-orient: vertical;
+    // 指定显示行数
+    -webkit-line-clamp: $line;
+    // 允许智能换行
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    // 表示不会打破一个单词，必须保持单词的完整才会换行
+    word-break: keep-all
+    // word-break: break-all;  表示单词在任何时候都会换行
+    // overflow-wrap: break-word; 设置或检索当内容超过指定容器的边界时是否断行。
+}
+
+/* 定义一个滚动的样式(Y轴) */
+@mixin scroll {
+    overflow-x: hidden;
+    overflow-y: auto;
+    /* 设置-webkit-overflow-scrolling: touch 可以解决移动端滚动卡顿的问题 */
+    -webkit-overflow-scrolling: touch;
+
+    /* 隐藏滚动条 --PC端不需要，移动端可使用, 默认显示滚动条*/
+    &::-webkit-scrollbar {
+        // display: none;
+    }
+}
+/* 定义一个滚动的样式(X轴) */
+@mixin scrollX {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+
+    /* 隐藏滚动条 --PC端不需要，移动端可使用，默认显示滚动条*/
+    &::-webkit-scrollbar {
+        // display: none;
+    }
+}

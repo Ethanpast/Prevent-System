@@ -1,0 +1,21 @@
+
+.loginbar{
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+	border-bottom:  solid #d2cce6;
+	background-color: #f8f8f8;
+	grid-area: header;
+}
+.text{
+	float: left;
+	width: 50%;
+	color: #808080;
+	text-align: center;
+	padding-bottom: 2rem;
+	font-style:Fantasy;
+	font-size: large;
+}
+
+
+

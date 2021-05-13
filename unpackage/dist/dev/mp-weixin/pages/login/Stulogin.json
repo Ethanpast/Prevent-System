@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "loginbar": "/components/u-loginbar/loginbar",
+    "imgcode": "/components/u-imgcode/imgcode"
+  }
+}

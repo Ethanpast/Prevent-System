@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "loginbar": "/components/u-imgcode/imgcode",
+    "picker-address": "/components/u-pickerAddress/pickerAddress"
+  }
+}

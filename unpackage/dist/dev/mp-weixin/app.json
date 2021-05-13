@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/login/Stulogin",
+    "pages/login/Visitlogin",
+    "pages/login/resetpassword",
+    "pages/index/index",
+    "pages/study/study",
+    "pages/my/my",
+    "pages/prevent/prevent"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "校园防疫",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "backgroundColor": "#1e90ff",
+    "color": "#000000",
+    "selectedColor": "#FFFFFF",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/home/home",
+        "iconPath": "static/home/icon1@2x.png",
+        "selectedIconPath": "static/home/icon5@2x.png"
+      },
+      {
+        "text": "防疫",
+        "pagePath": "pages/prevent/prevent",
+        "iconPath": "static/home/icon4@2x.png",
+        "selectedIconPath": "static/home/icon6@2x.png"
+      },
+      {
+        "text": "学习",
+        "pagePath": "pages/study/study",
+        "iconPath": "static/home/icon2@2x.png",
+        "selectedIconPath": "static/home/icon7@2x.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/my/my",
+        "iconPath": "static/home/icon3@2x.png",
+        "selectedIconPath": "static/home/icon8@2x.png"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

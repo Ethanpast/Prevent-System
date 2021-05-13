@@ -55,8 +55,8 @@
 </template>
 
 <script>
-	import loginbar from '../../components/loginbar/loginbar.vue'
-	import imgcode from '../../components/imgcode/imgcode.vue'
+	import loginbar from '../../components/u-loginbar/loginbar.vue'
+	import imgcode from '../../components/u-imgcode/imgcode.vue'
 
 	export default {
 		components: {

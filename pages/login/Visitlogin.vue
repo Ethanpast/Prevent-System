@@ -37,8 +37,8 @@
 </template>
 
 <script>
-	import loginbar from '../../components/loginbar/loginbar.vue'
-	import pickerAddress from '../../components/pickerAddress/pickerAddress.vue'
+	import loginbar from '../../components/u-imgcode/imgcode.vue'
+	import pickerAddress from '../../components/u-pickerAddress/pickerAddress.vue'
 	export default {
 		components: {
 			loginbar,
