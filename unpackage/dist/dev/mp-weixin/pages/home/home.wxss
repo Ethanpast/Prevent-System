@@ -174,7 +174,6 @@
 
 
 
-
 /* 	.home{
 	display: flex;
 	flex-direction: column;
@@ -285,6 +284,7 @@
 	font-weight: 700;
 }
 .xuexiaoziyunxianshi{
+	width: 677rpx;
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: flex;
@@ -304,7 +304,6 @@
 .zixunicon{
 	width: 21rpx;
 	height: 21rpx;
-	margin-right:10rpx ;
 }
 .zixun{
 	color: #c3c3c3;

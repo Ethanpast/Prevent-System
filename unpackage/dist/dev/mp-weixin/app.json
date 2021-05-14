@@ -7,7 +7,14 @@
     "pages/index/index",
     "pages/study/study",
     "pages/my/my",
-    "pages/prevent/prevent"
+    "pages/prevent/prevent",
+    "pages/setting/setting",
+    "pages/buymessage/buymessage",
+    "pages/friendlist/friendlist",
+    "pages/message/message",
+    "pages/personal/personal",
+    "pages/schoolmessage/schoolmessage",
+    "pages/xingchengka/xingchengka"
   ],
   "subPackages": [],
   "window": {
@@ -47,5 +54,6 @@
       }
     ]
   },
-  "usingComponents": {}
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json"
 }

@@ -4,9 +4,9 @@
   "navigationStyle": "custom",
   "usingComponents": {
     "u-swiper": "/uview-ui/components/u-swiper/u-swiper",
-    "u-navbar": "/uview-ui/components/u-navbar/u-navbar",
     "u-row": "/uview-ui/components/u-row/u-row",
     "u-col": "/uview-ui/components/u-col/u-col",
-    "u-tabs-swiper": "/uview-ui/components/u-tabs-swiper/u-tabs-swiper"
+    "u-tabs-swiper": "/uview-ui/components/u-tabs-swiper/u-tabs-swiper",
+    "u-navbar": "/uview-ui/components/u-navbar/u-navbar"
   }
 }

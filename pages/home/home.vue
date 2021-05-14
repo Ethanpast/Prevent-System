@@ -1,8 +1,8 @@
 <template>
 	<view class="home">
 		<view class="my__layout__wapper">
-			<view class="my__layout__wapper__login__bg">
-				<text class="my__layout__wapper__login__bg__text">疫校园</text>
+			<view class="my__layout__wapper__title">
+				<text class="my__layout__wapper__title__text">疫校园</text>
 			</view>
 		</view>
 		<view class="swipe">
@@ -108,14 +108,13 @@
 		data() {
 			return {
 				swiperList: [{
-						image: '../../../static/home/picture.png',
+						image: '../../static/home/picture.png',
 						title: 'nihao'
 					},
 					{
-						image: '../../../static/home/picture.png',
+						image: '../../static/home/picture.png',
 						title: 'nihao'
 					}
-
 				],
 				tabSwiperlist: [{
 					name: '学校资讯'
@@ -166,11 +165,8 @@
 				this.current = current;
 			},
 			// scroll-view到底部加载更多
-			onreachBottom() {
-
-			}
+			onreachBottom() {}
 		}
-
 	}
 </script>
 
@@ -188,7 +184,7 @@
 		padding-top: 165rpx;
 	}
 
-	.my__layout__wapper__login__bg {
+	.my__layout__wapper__title {
 		overflow: hidden;
 		position: fixed;
 		width: 1350rpx;
@@ -201,23 +197,24 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: flex-end;
-
 		background: linear-gradient(top right, #87CEFA, #3762EC);
 		border-radius: 45%;
 	}
-	.uswipetitle{
+
+	.uswipetitle {
 		margin-top: 20rpx;
 		width: 677rpx;
 		margin-left: 36.5rpx;
-		border: 3rpx solid #eeeeee ;
-			border-radius: 35rpx;
+		border: 3rpx solid #eeeeee;
+		border-radius: 35rpx;
 	}
+
 	.swipe {
 		margin: 0 auto;
 		width: 677rpx;
 		height: 295rpx;
-	border-radius: 27rpx;
-		
+		border-radius: 27rpx;
+
 	}
 
 	.wrap {
@@ -226,7 +223,7 @@
 		height: 187rpx;
 		background-color: #ffffff;
 		border-radius: 27rpx;
-		border: 3rpx solid #eeeeee ;
+		border: 3rpx solid #eeeeee;
 	}
 
 	.yiqingnumber {
@@ -243,8 +240,6 @@
 		font-weight: 900;
 		margin-top: 20rpx;
 	}
-
-
 
 	.content-div {
 		width: 677rpx;
@@ -264,7 +259,7 @@
 		font-family: MicrosoftYaHei;
 		font-size: 23rpx;
 		margin-left: 36.5rpx;
-		border: 3rpx solid #eeeeee ;
+		border: 3rpx solid #eeeeee;
 	}
 
 	.xuexiaotitle {
@@ -275,26 +270,31 @@
 
 	.xuexiaocontent {
 		font-weight: 700;
-		
+
 	}
-	.xuexiaoziyunxianshi{
+
+	.xuexiaoziyunxianshi {
 		display: flex;
-		justify-content:space-between;
+		justify-content: space-between;
 	}
-	.xuexiaoziyunicon{
+
+	.xuexiaoziyunicon {
 		display: flex;
 		margin-top: 10rpx;
 		align-items: center;
 	}
-	.zixunicon{
+
+	.zixunicon {
 		width: 21rpx;
 		height: 21rpx;
-		margin-right:10rpx ;
+		margin-right: 10rpx;
 	}
-	.zixun{
+
+	.zixun {
 		color: #c3c3c3;
 	}
-	.swiper_date{
+
+	.swiper_date {
 		margin-right: 50rpx;
 		color: #c3c3c3;
 	}
