@@ -1,1 +1,0 @@
-<view class="loginbar clear"><view data-event-opts="{{[['tap',[['stu',['$event']]]]]}}" class="text clear" bindtap="__e">学号/工号</view><view data-event-opts="{{[['tap',[['visit',['$event']]]]]}}" class="text clear" bindtap="__e">游客</view></view>
