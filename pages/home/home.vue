@@ -92,11 +92,11 @@
 </template>
 
 <script>
-	import uSwiper from '../../uview-ui/components/u-swiper/u-swiper.vue'
-	import uNavbar from '../../uview-ui/components/u-navbar/u-navbar.vue'
-	import uRow from '../../uview-ui/components/u-row/u-row.vue'
-	import uCol from '../../uview-ui/components/u-col/u-col.vue'
-	import uTabsSwiper from '../../uview-ui/components/u-tabs-swiper/u-tabs-swiper.vue'
+	import uSwiper from '../../node_modules/uview-ui/components/u-swiper/u-swiper.vue'
+	import uNavbar from '../../node_modules/uview-ui/components/u-navbar/u-navbar.vue'
+	import uRow from '../../node_modules/uview-ui/components/u-row/u-row.vue'
+	import uCol from '../../node_modules/uview-ui/components/u-col/u-col.vue'
+	import uTabsSwiper from '../../node_modules/uview-ui/components/u-tabs-swiper/u-tabs-swiper.vue'
 	export default {
 		components: {
 			uSwiper,
