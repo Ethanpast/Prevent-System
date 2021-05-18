@@ -13,9 +13,12 @@
 </script>
 
 <style >
+	page{
+		background-color: #f6f6f6
+	}
 	/*每个页面公共css */
 	@import "../uview-ui/libs/index.scss"
-
+	
 	@font-face {
 	  font-family: "iconfont"; /* Project id 2542126 */
 	  src: url('//at.alicdn.com/t/font_2542126_6pb1lrm4wl3.woff2?t=1620914343711') format('woff2'),

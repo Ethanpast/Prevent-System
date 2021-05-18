@@ -97,7 +97,12 @@ export default {
 					id:3,
 					permission:0,
 					name:"14天行程",
-					imgSrc:'../../static/prevention/icon4.png'
+					imgSrc:'../../static/prevention/icon4.png',
+					func: function() {
+						uni.navigateTo({
+							url: './studentJourney/studentJourney'
+						})
+					}
 				},
 				{
 					id:4,

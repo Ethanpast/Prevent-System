@@ -157,6 +157,15 @@
             }
             
         }
+        ,{
+            "path" : "pages/prevent/studentJourney/studentJourney",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
