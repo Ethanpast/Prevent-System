@@ -15,6 +15,7 @@
 		<view class="kouzhaotixing">
 			未佩戴口罩提醒
 			<view class="xiaoxitixing" v-for="(item,index) in tixingList" :key='item.id'>
+				<view class="mark"></view>
 				<view class="tixingplace">  您于{{item.place}}未合理佩戴口罩，请以正确方式佩戴</view>
 				<view class="tixingdata">{{item.data}}</view>
 			</view>
@@ -283,11 +284,19 @@
 				font-size: 21rpx;
 				font-weight: normal;
 				margin-left: 30rpx;
-				border-left: 7rpx solid #ff0000;
 				border-radius: 5rpx;
 				color: #7c7c7c;
 			}
-
+			.mark {
+				width: 10rpx;
+				height: 29rpx;
+				background-color: #ff0000;
+				border-radius: 5rpx;
+			}
+			
+			.tixingplace{
+				margin-left: -40rpx;
+			}
 		}
 
 

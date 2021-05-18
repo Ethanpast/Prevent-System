@@ -1,4 +1,2 @@
-node_modules/
-.project
-unpackage/
-.DS_Store
+# git提交忽略
+/unpackage

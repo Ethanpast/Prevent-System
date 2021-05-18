@@ -45,6 +45,7 @@
 			"path": "pages/index/index",
 			"style": {
 				"navigationBarTitleText": "校园防疫"
+				
 			}
 		}
 
@@ -53,7 +54,9 @@
 			"path": "pages/study/study",
 			"style": {
 				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+				
 			}
 
 		}, {
@@ -68,7 +71,8 @@
 			"path": "pages/prevent/prevent",
 			"style": {
 				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
 			}
 
 		}
