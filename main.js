@@ -11,4 +11,6 @@ App.mpType = 'app'
 const app = new Vue({
     ...App
 })
+
+// 挂载全局
 app.$mount()
