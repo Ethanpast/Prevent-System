@@ -7,7 +7,7 @@ Vue.config.productionTip = false
 
 App.mpType = 'app'
 
-
+// 引入全局uView
 const app = new Vue({
     ...App
 })
